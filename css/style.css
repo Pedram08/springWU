@@ -19,21 +19,13 @@ header {
     margin-left: 50px; 
 }
 
-.namn2 {
-    font-size: 1.8rem;
-    color: goldenrod;
-    font-weight: bold;
-    font-family: Georgia, serif;
-    margin-left: 20px; 
-    padding: 10px;
-}
-
 .menu{
     height: 100vh;
     width: 80vw;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    row-gap: 10px;
     align-items: center;
     background: black;
     position: absolute;
@@ -44,6 +36,9 @@ header {
     z-index: 10;
     color: white;
     text-decoration: none;
+}
+.menu.hover {
+    color: goldenrod;
 }
 
 .menu-button{
@@ -81,6 +76,81 @@ text-decoration: none;
 
 .fade-layer.visible{
     display: block;
+}
+
+.namn2 {
+    font-size: 1.9rem;
+    color: goldenrod;
+    font-weight: bold;
+    font-family: Georgia, serif;
+    margin-left: 11px; 
+    padding: 10px;
+}
+
+.textruta1 {
+    color: white;
+    font-family: Georgia, serif;
+    margin-left: 20px; 
+    font-size: 1.25rem;
+    width: 80vw;
+    padding: 15px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;    
+    align-items: center;
+    padding: 30px;
+}
+
+.box {
+    display: inline-block;
+    background: white;
+    padding: 20px 40px;
+    color: black;
+    text-decoration: none;
+    border-radius: 10px;
+    border: 3px solid goldenrod;
+    font-family: Georgia, serif;
+    font-size: 2.1rem;
+    text-align: center;
+    width: 75vw;
+}
+
+.tider {
+    border-radius: 10px;
+    border: 3px solid goldenrod;
+    background-color: white;
+    width: 90vw;
+}
+.tider-rubrik{
+    color: black;
+    font-family: Georgia, serif;
+    padding: 5px;
+    font-size: 1.1rem;
+}
+.tider-dagar {
+    color: black;
+    font-family: Georgia, serif; 
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    column-gap: 63vw;
+    justify-items: center;
+    font-size: 0.8rem;
+}
+
+.karta {
+    border-radius: 10px;
+    border: 3px solid goldenrod;
+    background-color: white;
+    width: 90vw;
+}
+.karta-rubrik {
+    color: black;
+    font-family: Georgia, serif;
+    padding: 5px;
+    font-size: 1.1rem;
 }
 
 @media screen and (min-width:1024px) {
