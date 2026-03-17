@@ -145,14 +145,26 @@ text-decoration: none;
     border: 3px solid goldenrod;
     background-color: white;
     width: 90vw;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); 
 }
 .karta-rubrik {
     color: black;
     font-family: Georgia, serif;
     padding: 5px;
     font-size: 1.1rem;
+    padding: 5px;
+}
+.lokation {
+    width: 90vw;
 }
 
+.botten {
+    height: 500px;
+    background-color: rgba(35, 35, 35, 0.742);
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); 
+}
 @media screen and (min-width:1024px) {
     .menu-button {
         display: none;
