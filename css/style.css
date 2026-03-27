@@ -10,6 +10,8 @@ header {
     display: grid;
     grid-template-columns: repeat(3, 1fr); 
     align-content: center;
+    position: ;
+    margin-top: 10;
 }
 .namn {
     font-size: 1.3rem;
@@ -24,8 +26,8 @@ header {
     width: 80vw;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    row-gap: 10px;
+    justify-content: space-evenly;
+    row-gap: 1px;
     align-items: center;
     background: black;
     position: absolute;
@@ -57,6 +59,7 @@ header {
 .menu a {
 color: white;
 text-decoration: none;
+font-size: 1.3rem;
 }
 
 .show{
@@ -77,6 +80,10 @@ text-decoration: none;
 .fade-layer.visible{
     display: block;
 }
+
+
+/*HEM*/
+
 
 .container {
 
@@ -184,6 +191,7 @@ text-decoration: none;
 }
 .lokation {
     width: 90vw;
+    border-radius: 10px;
 }
 
 .botten {
@@ -192,7 +200,7 @@ text-decoration: none;
     color: white; 
     font-family: Georgia, serif;
     row-gap: 40px;
-    width: 100%;
+    width: 100vw;
 }
 .botten-namn {
     font-size: 1.9rem;
@@ -236,6 +244,94 @@ a {
     color: white;
     font-size: 1rem;
 }
+
+
+/*PRISER*/
+
+
+.wrapper2 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;    
+    text-align: center;
+    align-items: center;
+    padding: 30px;
+    color: white;
+    font-family: Georgia, serif;
+}
+
+.namn3 {
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: Georgia, serif;
+}
+
+.prisbox {
+    display: inline-block;
+    background-color: rgba(35, 35, 35, 0.742);
+    padding: 20px 40px;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    border: 1px solid goldenrod;
+    font-family: Georgia, serif;
+    font-size: 2.1rem;
+    text-align: center;
+    width: 75vw;
+    height: 35px;
+}
+.prisbox-inside {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    column-gap: 35vw;
+    align-items: center;
+}
+.tjänst {
+    color: goldenrod;
+    font-size: 1.4rem;
+}
+.pris {
+    font-size: 1.35rem;
+    font-family:sans-serif
+}
+.duration{
+    color: white;
+    font-size: 1rem;
+}
+
+
+/*KONTAKT*/
+
+
+.kontaktbox {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-family: Georgia, serif;
+    background-color: rgba(35, 35, 35, 0.742);
+    width: 100vw;
+
+}
+.kontaktbox-rubrik {
+    color: goldenrod;
+    font-size: 1.4rem;
+    padding: 10px;
+}
+.kontaktinformation {
+    color: white;
+    font-size: 1.2rem;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: -100px;
+}
+.kontaktinformation-rubrik {
+    color: grey;
+    font-size: 1rem;
+}
+
+
 @media screen and (min-width:1024px) {
     .menu-button {
         display: none;
