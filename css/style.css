@@ -227,7 +227,7 @@ font-size: 1.3rem;
 .snabblinks {
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 15px;
 }
 .kontakter {
     display: flex;
@@ -239,6 +239,9 @@ a {
     color: white;
     font-size: 1rem;
     width: 12vw;
+}
+a:hover {
+    color: goldenrod;
 }
 .kontakt {
     color: white;
@@ -300,6 +303,32 @@ a {
     font-size: 1rem;
 }
 
+.bildruta-2{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    justify-items: center;
+    padding: 10px;
+}
+.bildruta-3{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);  
+    justify-items: center;
+    padding: 10px;
+}
+.bilder0{
+    width: 150px;
+    height: 150px;
+}
+.bilder {
+    width: 150px;
+}
+.bilder2{
+    width: 220px;
+}
+.bilder3{
+    width: 220px;
+    height: 145px;
+}
 
 /*KONTAKT*/
 
@@ -331,6 +360,59 @@ a {
     font-size: 1rem;
 }
 
+.tiderbox {
+    background-color: black;
+    padding: 15px;
+    font-family: Georgia, serif;
+}
+.tiderbox-rubrik {
+    color: goldenrod;
+    font-size: 1.4rem;
+}
+.tiderbox-tider {
+    color: white;
+    font-size: 0.9rem;
+    display: grid;
+    grid-template-columns: repeat(2, 0fr); 
+    column-gap: 80px;
+}
+
+.kartabox {
+    width: 100%;
+}
+
+
+/*BOKNING*/
+
+
+.container2 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;    
+    text-align: center;
+    align-items: center;
+    padding: 25px;
+    color: goldenrod;
+    font-family: Georgia, serif;
+    font-size: 1rem;
+    border-radius: 20px;
+    background-color: rgba(82, 82, 82, 0.279);
+}
+
+.contact-form {
+  width: 300px;
+  padding: 50px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 8px;
+}
+
+.contact-form textarea {
+  height: 100px;
+}
 
 @media screen and (min-width:1024px) {
     .menu-button {
